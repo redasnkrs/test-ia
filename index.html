@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URBAN STYLE | Mode masculine tendance pour hommes urbains</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 99;
+      background: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+    .collection-card {
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .collection-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .collection-card img {
+      transition: transform 0.5s ease;
+    }
+
+    .collection-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .testimonial-card {
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      transition: color 0.3s ease;
+    }
+
+    .faq-question:hover {
+      color: #1a1a1a;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800">
+        <span class="text-indigo-600">URBAN</span>STYLE
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="text-gray-800 hover:text-indigo-600">Accueil</a>
+        <a href="#about" class="text-gray-800 hover:text-indigo-600">La marque</a>
+        <a href="#collections" class="text-gray-800 hover:text-indigo-600">Collections</a>
+        <a href="#testimonials" class="text-gray-800 hover:text-indigo-600">Avis</a>
+        <a href="#contact" class="text-gray-800 hover:text-indigo-600">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button class="text-gray-800 focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="relative h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+         alt="Homme stylé en tenue urbaine"
+         class="w-full h-full object-cover">
+    <div class="absolute inset-0 hero-gradient"></div>
+  </div>
+  <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">VOTRE STYLE, NOTRE EXPERTISE</h1>
+    <p class="text-xl text-gray-200 mb-10">Des vêtements tendance à prix abordables pour l'homme urbain des années 2020. Trouvez votre look parfait avec nos conseils personnalisés.</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#collections" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+        Découvrir la collection
+      </a>
+      <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+        Prendre rendez-vous
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">QUI SOMMES-NOUS ?</h2>
+      <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="md:w-1/2">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80"
+             alt="Équipe Urban Style"
+             class="rounded-lg shadow-xl w-full h-auto">
+      </div>
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6">Redéfinir la mode masculine urbaine</h3>
+        <p class="text-gray-600 mb-6">Fondée en 2020, Urban Style est née d'une passion pour la mode masculine accessible sans compromis sur la qualité. Nous croyons que chaque homme mérite de se sentir confiant dans ses vêtements, quel que soit son budget.</p>
+
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+              <i class="fas fa-tshirt text-indigo-600"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-800 mb-1">Style sur mesure</h4>
+              <p class="text-gray-600">Des pièces conçues pour s'adapter parfaitement à la silhouette masculine moderne.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+              <i class="fas fa-euro-sign text-indigo-600"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-800 mb-1">Accessibilité</h4>
+              <p class="text-gray-600">Des prix justes pour une qualité premium. Pas de marque, juste du style.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+              <i class="fas fa-hands-helping text-indigo-600"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-800 mb-1">Conseil personnalisé</h4>
+              <p class="text-gray-600">Nos experts vous guident pour créer une garde-robe qui vous ressemble.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Collections Section -->
+<section id="collections" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">NOS COLLECTIONS</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Découvrez nos gammes conçues pour répondre à tous vos besoins vestimentaires</p>
+      <div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Collection 1 -->
+      <div class="collection-card bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="relative overflow-hidden h-64">
+          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80"
+               alt="Collection Streetwear"
+               class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <a href="#" class="bg-white text-gray-800 font-semibold py-2 px-6 rounded-full">Voir la collection</a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">STREETWEAR</h3>
+          <p class="text-gray-600 mb-4">Des pièces urbaines inspirées des dernières tendances pour un look décontracté mais stylé.</p>
+          <a href="#" class="text-indigo-600 font-semibold flex items-center">
+            Explorer <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Collection 2 -->
+      <div class="collection-card bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="relative overflow-hidden h-64">
+          <img src="https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+               alt="Collection Casual"
+               class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <a href="#" class="bg-white text-gray-800 font-semibold py-2 px-6 rounded-full">Voir la collection</a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">CASUAL</h3>
+          <p class="text-gray-600 mb-4">Des tenues polyvalentes pour toutes les occasions du quotidien, du café entre amis au date du vendredi soir.</p>
+          <a href="#" class="text-indigo-600 font-semibold flex items-center">
+            Explorer <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Collection 3 -->
+      <div class="collection-card bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="relative overflow-hidden h-64">
+          <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+               alt="Collection Workwear"
+               class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <a href="#" class="bg-white text-gray-800 font-semibold py-2 px-6 rounded-full">Voir la collection</a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">WORKWEAR</h3>
+          <p class="text-gray-600 mb-4">Des vêtements professionnels qui gardent votre style personnel, pour impressionner au bureau sans perdre votre identité.</p>
+          <a href="#" class="text-indigo-600 font-semibold flex items-center">
+            Explorer <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Collection 4 -->
+      <div class="collection-card bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="relative overflow-hidden h-64">
+          <img src="https://images.unsplash.com/photo-1592155931584-901ac15763e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+               alt="Collection Accessoires"
+               class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <a href="#" class="bg-white text-gray-800 font-semibold py-2 px-6 rounded-full">Voir la collection</a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">ACCESSOIRES</h3>
+          <p class="text-gray-600 mb-4">Les détails qui font la différence. Montres, ceintures, chaussures et plus pour compléter votre look.</p>
+          <a href="#" class="text-indigo-600 font-semibold flex items-center">
+            Explorer <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#" class="inline-block bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+        Voir toutes nos collections
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">ILS NOUS FONT CONFIANCE</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Découvrez ce que nos clients disent de leur expérience Urban Style</p>
+      <div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card bg-gray-50 rounded-lg p-8">
+        <div class="flex items-center mb-4">
+          <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Thomas L." class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-800">Thomas L.</h4>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600 italic">"Je cherchais des vêtements qui correspondent à mon style de vie actif sans casser mon budget. Urban Style a totalement répondu à mes attentes. Le conseil personnalisé m'a permis de découvrir des pièces que je n'aurais jamais osé essayer seul."</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card bg-gray-50 rounded-lg p-8">
+        <div class="flex items-center mb-4">
+          <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Mehdi K." class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-800">Mehdi K.</h4>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600 italic">"En tant que jeune professionnel, j'avais besoin d'une garde-robe qui passe du bureau au week-end. Les conseillers d'Urban Style ont créé pour moi des combinaisons parfaites. La qualité des vêtements est impressionnante pour le prix."</p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card bg-gray-50 rounded-lg p-8">
+        <div class="flex items-center mb-4">
+          <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Alexandre P." class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-800">Alexandre P.</h4>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600 italic">"Je ne suis pas un expert en mode, mais grâce à Urban Style, j'ai pu complètement renouveler ma garde-robe en une seule séance. Le service de conseil est un vrai plus. Maintenant, je reçois régulièrement des compliments sur mon style!"</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-900 text-white">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">PRÊT À TROUVER VOTRE STYLE ?</h2>
+      <p class="text-gray-300 max-w-2xl mx-auto">Réservez une séance de conseil personnalisé avec nos experts en style masculin</p>
+      <div class="w-20 h-1 bg-indigo-400 mx-auto mt-4"></div>
+    </div>
+
+    <div class="max-w-3xl mx-auto bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+      <div class="md:flex">
+        <div class="md:w-1/2 bg-indigo-600 p-10 flex flex-col justify-center">
+          <h3 class="text-2xl font-bold mb-4">Conseil personnalisé</h3>
+          <p class="mb-6">Notre service de conseil en style vous permet de :</p>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <i class="fas fa-check-circle mr-3 mt-1"></i>
+              <span>Découvrir des pièces qui correspondent à votre morphologie</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle mr-3 mt-1"></i>
+              <span>Créer des combinaisons parfaites pour toutes les occasions</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle mr-3 mt-1"></i>
+              <span>Apprendre à maximiser votre garde-robe avec des pièces polyvalentes</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle mr-3 mt-1"></i>
+              <span>Recevoir des conseils d'entretien pour prolonger la durée de vie de vos vêtements</span>
+            </li>
+          </ul>
+        </div>
+        <div class="md:w-1/2 p-10">
+          <form>
+            <div class="mb-6">
+              <label for="name" class="block text-gray-300 mb-2">Nom complet</label>
+              <input type="text" id="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block text-gray-300 mb-2">Email</label>
+              <input type="email" id="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div class="mb-6">
+              <label for="phone" class="block text-gray-300 mb-2">Téléphone</label>
+              <input type="tel" id="phone" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div class="mb-6">
+              <label for="date" class="block text-gray-300 mb-2">Date souhaitée</label>
+              <input type="date" id="date" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+              Réserver maintenant
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">QUESTIONS FRÉQUENTES</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Trouvez les réponses aux questions que vous vous posez souvent</p>
+    </div>
+</html>
